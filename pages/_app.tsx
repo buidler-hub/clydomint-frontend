@@ -23,7 +23,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           description:
             "ClydoMint is a discord bot that allows you to mint NFTs via discord commands.",
           images: [],
-         
         }}
         twitter={{
           handle: "@buidlershub",
