@@ -4,6 +4,9 @@ import { NextSeo } from "next-seo";
 import type { AppProps } from "next/app";
 import NextNProgress from "nextjs-progressbar";
 
+import "@fontsource/red-hat-display";
+import "@fontsource/montserrat";
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider desiredChainId={ChainId.Mumbai}>
