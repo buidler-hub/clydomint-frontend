@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       }}
     >
       <Header />
-      <div className="flex flex-row mt-12 ml-4">
+      <div className="flex flex-row mt-24 ml-4">
         <Image
           src="/assets/blob.svg"
           height="250"

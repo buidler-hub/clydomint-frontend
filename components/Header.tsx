@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="font-redHat h-20 px-8 py-6 w-full flex flex-row justify-between">
+    <div className="font-redHat h-20 px-8 py-6 w-full flex flex-row justify-between fixed top-0 z-50">
       <p className="text-2xl">
         CLYDO
         <span className="font-semibold">MINT</span>
