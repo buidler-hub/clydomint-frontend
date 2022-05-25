@@ -9,7 +9,10 @@ import "@fontsource/montserrat";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider desiredChainId={ChainId.Mumbai}>
+    <ThirdwebProvider
+      desiredChainId={ChainId.Mumbai}
+      supportedChains={[ChainId.Mumbai, ChainId.Mainnet]}
+    >
       <NextNProgress />
 
       <NextSeo

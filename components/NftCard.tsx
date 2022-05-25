@@ -9,6 +9,7 @@ interface INftCardProps {
     image: string;
     description: string;
     signature: string;
+    network: string;
   };
 }
 
@@ -42,6 +43,11 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
       </div>
       <h1 className="mt-1 text-center text-4xl">{data.name}</h1>
       <p className="mt-3 text-center">{data.description}</p>
+      <p className="mt-3">
+        This NFT is meant to be minted on{" "}
+        {data.network === "mumbai" ? "Polygon Mumbai" : "Polygon Mainnet"}. Make
+        sure you're connected to the correct network
+      </p>
       <button
         disabled={loading}
         onClick={mint}

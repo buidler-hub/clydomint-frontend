@@ -14,6 +14,7 @@ interface Props {
     image: string;
     description: string;
     signature: string;
+    network: string;
   };
 }
 
