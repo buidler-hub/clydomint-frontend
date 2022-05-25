@@ -46,7 +46,7 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
       <p className="mt-3">
         This NFT is meant to be minted on{" "}
         {data.network === "mumbai" ? "Polygon Mumbai" : "Polygon Mainnet"}. Make
-        sure you're connected to the correct network
+        sure you&apos;re connected to the correct network
       </p>
       <button
         disabled={loading}
