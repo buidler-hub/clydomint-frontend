@@ -1,32 +1,3 @@
-const Arrow = ({ ...props }) => {
-    return (
-        <svg
-            width="34"
-            height="38"
-            viewBox="0 0 34 38"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            {...props}
-        >
-            <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M17 30.9375C17.2818 30.9375 17.552 30.8289 17.7513 30.6355C17.9506 30.4421 18.0625 30.1798 18.0625 29.9063V5.5832L24.7477 12.0739C24.9473 12.2675 25.2179 12.3763 25.5 12.3763C25.7821 12.3763 26.0527 12.2675 26.2522 12.0739C26.4518 11.8802 26.5638 11.6176 26.5638 11.3438C26.5638 11.0699 26.4518 10.8073 26.2522 10.6136L17.7522 2.36364C17.6536 2.2676 17.5363 2.19141 17.4072 2.13942C17.2781 2.08743 17.1398 2.06067 17 2.06067C16.8602 2.06067 16.7219 2.08743 16.5928 2.13942C16.4637 2.19141 16.3464 2.2676 16.2477 2.36364L7.74775 10.6136C7.64896 10.7095 7.5706 10.8233 7.51714 10.9486C7.46367 11.0739 7.43616 11.2082 7.43616 11.3438C7.43616 11.6176 7.54824 11.8802 7.74775 12.0739C7.94726 12.2675 8.21785 12.3763 8.5 12.3763C8.78215 12.3763 9.05274 12.2675 9.25225 12.0739L15.9375 5.5832V29.9063C15.9375 30.1798 16.0494 30.4421 16.2487 30.6355C16.448 30.8289 16.7182 30.9375 17 30.9375Z"
-                fill="black"
-            />
-            <line
-                x1="4.75"
-                y1="37.25"
-                x2="29.25"
-                y2="37.25"
-                stroke="black"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-            />
-        </svg>
-    );
-};
-
 const ArrowDown = ({ ...props }) => {
     return (
         <svg
@@ -47,4 +18,52 @@ const ArrowDown = ({ ...props }) => {
     );
 };
 
-export { Arrow, ArrowDown };
+const Blob = ({ ...props }) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="277"
+            height="244"
+            fill="none"
+            viewBox="0 0 277 244"
+            {...props}
+        >
+            <g filter="url(#filter0_f_22_59)">
+                <path
+                    fill="#DBFD00"
+                    fillOpacity="0.8"
+                    fillRule="evenodd"
+                    d="M81.633 30.607c50.532-28.676 108.718-21.974 146.22 7.9 37.12 29.57 49.693 79.77 22.217 126.275-26.66 45.124-83.731 67.1-135.971 66.258-51.242-.825-94.808-25.627-102.01-70.093C4.39 113.428 30.755 59.479 81.632 30.607z"
+                    clipRule="evenodd"
+                ></path>
+            </g>
+            <defs>
+                <filter
+                    id="filter0_f_22_59"
+                    width="278.136"
+                    height="242.801"
+                    x="-1.23"
+                    y="0.262"
+                    colorInterpolationFilters="sRGB"
+                    filterUnits="userSpaceOnUse"
+                >
+                    <feFlood
+                        floodOpacity="0"
+                        result="BackgroundImageFix"
+                    ></feFlood>
+                    <feBlend
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    ></feBlend>
+                    <feGaussianBlur
+                        result="effect1_foregroundBlur_22_59"
+                        stdDeviation="6"
+                    ></feGaussianBlur>
+                </filter>
+            </defs>
+        </svg>
+    );
+};
+
+export { ArrowDown, Blob };
