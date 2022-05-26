@@ -29,8 +29,8 @@ function MyApp({ Component, pageProps }: AppProps) {
                     images: [
                         {
                             url: '/assets/og.png',
-                            height: 1200,
-                            width: 630,
+                            height: 630,
+                            width: 1200,
                             alt: 'Og Image',
                             type: 'image/png',
                         },
