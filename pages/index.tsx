@@ -1,7 +1,7 @@
 import Header from '../components/Header';
-import { ArrowDown } from '../components/Icons';
+import { ArrowDown, Blob } from '../components/Icons';
 import type { NextPage } from 'next';
-import Image from 'next/image';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
     return (
@@ -13,13 +13,8 @@ const Home: NextPage = () => {
         >
             <Header />
             <div className="flex flex-row mt-24 ml-4">
-                <Image
-                    alt=""
-                    className="absolute"
-                    height="250"
-                    src="/assets/blob.svg"
-                    width="250"
-                />
+                <Blob className="absolute" />
+
                 <div className="text-5xl font-redHat m-28 font-regular absolute z-50">
                     Mint <span className="font-semibold">NFTs</span>
                     <p className="font-semibold">right from Discord</p>
@@ -27,9 +22,18 @@ const Home: NextPage = () => {
                         Use our bot to quickly mint NFTs <br />
                         right from discord.
                     </p>
-                    <button className="mt-10 font-montserrat text-xl px-8 py-2 bg-black text-white font-semibold hover:mt-8 hover:ml-2 transition-all duration-100">
-                        INVITE BOT
-                    </button>
+                    <Link
+                        href="https://discord.com/api/oauth2/authorize?client_id=977579405163520082&permissions=8&scope=bot"
+                        passHref
+                    >
+                        <a
+                            className="mt-10 font-montserrat text-xl px-8 py-2 bg-black text-white font-semibold hover:mt-8 hover:ml-2 transition-all duration-100"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            INVITE BOT
+                        </a>
+                    </Link>
                 </div>
             </div>
 

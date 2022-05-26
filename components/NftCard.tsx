@@ -32,7 +32,7 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
     };
 
     return (
-        <div className="flex flex-col items-center gap-1">
+        <div className="flex flex-col items-center gap-1 font-redHat">
             <div className="relative h-60 w-[80rem]">
                 <Image
                     objectFit="contain"
