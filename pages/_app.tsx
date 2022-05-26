@@ -4,8 +4,9 @@ import '@fontsource/red-hat-display';
 import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
 import { NextSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
-import NextNProgress from 'nextjs-progressbar';
 import Head from 'next/head';
+import NextNProgress from 'nextjs-progressbar';
+
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
