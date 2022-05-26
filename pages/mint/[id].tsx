@@ -29,11 +29,13 @@ const MintNFT: NextPage<Props> = ({ data }) => {
             <Header />
 
             {address ? (
-                <div className="w-[60vw] self-start">
+                <div className="w-[60vw] md:self-start self-center">
                     <NftCard data={data} />
                 </div>
             ) : (
-                <ConnectWallet />
+                <div className="w-[60vw] md:w-screen">
+                    <ConnectWallet />
+                </div>
             )}
         </div>
     );

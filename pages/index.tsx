@@ -15,10 +15,19 @@ const Home: NextPage = () => {
             <div className="flex flex-row mt-24 ml-4">
                 <Blob className="absolute" />
 
-                <div className="text-5xl font-redHat m-28 font-regular absolute z-50">
-                    Mint <span className="font-semibold">NFTs</span>
-                    <p className="font-semibold">right from Discord</p>
-                    <p className="text-lg text-gray-700 font-medium mt-4">
+                <div className="text-5xl font-redHat md:m-28 font-regular m-5 items-center md:items-start justify-center flex flex-col absolute z-50">
+                    <p>
+                        Mint <span className="font-semibold">NFTs</span>
+                    </p>
+                    <p
+                        style={{
+                            lineHeight: '1.1',
+                        }}
+                        className="font-semibold text-center"
+                    >
+                        right from Discord
+                    </p>
+                    <p className="text-lg text-gray-700 font-medium mt-4 text-center md:text-left">
                         Use our bot to quickly mint NFTs <br />
                         right from discord.
                     </p>

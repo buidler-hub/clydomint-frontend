@@ -33,7 +33,7 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
 
     return (
         <div className="flex flex-col items-center gap-1 font-redHat">
-            <div className="relative h-60 w-[80rem]">
+            <div className="relative h-20 w-[20rem] md:h-60 md:w-[65rem]">
                 <Image
                     objectFit="contain"
                     layout="fill"
@@ -43,7 +43,7 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
             </div>
             <h1 className="mt-1 text-center text-4xl">{data.name}</h1>
             <p className="mt-3 text-center">{data.description}</p>
-            <p className="mt-3">
+            <p className="mt-3 text-center">
                 This NFT is meant to be minted on{' '}
                 {data.network === 'mumbai'
                     ? 'Polygon Mumbai'
