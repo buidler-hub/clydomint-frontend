@@ -5,6 +5,7 @@ import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
 import { NextSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 import NextNProgress from 'nextjs-progressbar';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -15,17 +16,25 @@ function MyApp({ Component, pageProps }: AppProps) {
             <NextNProgress />
 
             <NextSeo
-                canonical=""
+                canonical="https://clydomint.xyz/"
                 defaultTitle="ClydoMint"
                 description={
                     'ClydoMint is a discord bot that allows you to mint NFTs via discord commands.'
                 }
                 openGraph={{
-                    url: '',
+                    url: 'https://clydomint.xyz/',
                     title: 'ClydoMint',
                     description:
                         'ClydoMint is a discord bot that allows you to mint NFTs via discord commands.',
-                    images: [],
+                    images: [
+                        {
+                            url: '/assets/og.png',
+                            height: 1200,
+                            width: 630,
+                            alt: 'Og Image',
+                            type: 'image/png',
+                        },
+                    ],
                 }}
                 title="ClydoMint"
                 titleTemplate="ClydoMint"
@@ -35,6 +44,9 @@ function MyApp({ Component, pageProps }: AppProps) {
                     cardType: 'summary_large_image',
                 }}
             />
+            <Head>
+                <link rel="icon" type="image/png" href="/assets/favicon.png" />
+            </Head>
             <Component {...pageProps} />
         </ThirdwebProvider>
     );
