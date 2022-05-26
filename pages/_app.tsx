@@ -7,7 +7,6 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import NextNProgress from 'nextjs-progressbar';
 
-
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <ThirdwebProvider
