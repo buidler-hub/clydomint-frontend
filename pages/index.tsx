@@ -48,7 +48,11 @@ const Home: NextPage = () => {
             </div>
 
             <div className="absolute bottom-0 flex justify-center w-full">
-                <a href="https://vercel.com?utm_source=buidlers-hub&utm_campaign=oss">
+                <a
+                    href="https://vercel.com?utm_source=buidlers-hub&utm_campaign=oss"
+                    target="_blank"
+                    rel="noopener"
+                >
                     <Image
                         src="/assets/powered-by-vercel.svg"
                         height="50"
