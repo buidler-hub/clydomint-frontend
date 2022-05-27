@@ -51,7 +51,7 @@ const Home: NextPage = () => {
                 <a
                     href="https://vercel.com?utm_source=buidlers-hub&utm_campaign=oss"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                 >
                     <Image
                         src="/assets/powered-by-vercel.svg"
