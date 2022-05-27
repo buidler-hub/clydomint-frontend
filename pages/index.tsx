@@ -1,6 +1,7 @@
 import Header from '../components/Header';
-import { ArrowDown, Blob } from '../components/Icons';
+import { Blob } from '../components/Icons';
 import type { NextPage } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Home: NextPage = () => {
@@ -46,8 +47,16 @@ const Home: NextPage = () => {
                 </div>
             </div>
 
-            <div className="absolute left-0 bottom-0 ml-8 mb-4">
-                <ArrowDown height="50" width="50" />
+            <div className="absolute bottom-0 flex justify-center w-full">
+                <a href="https://vercel.com?utm_source=buidlers-hub&utm_campaign=oss">
+                    <Image
+                        src="/assets/powered-by-vercel.svg"
+                        height="50"
+                        width="250"
+                        alt=""
+                        objectFit="contain"
+                    />
+                </a>
             </div>
         </div>
     );
