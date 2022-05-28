@@ -4,7 +4,6 @@ import NftCard from '../../components/NftCard';
 import instance from '../../utils/axios';
 import { useAddress } from '@thirdweb-dev/react';
 import type { GetServerSideProps, NextPage } from 'next';
-import toast from "react-hot-toast"
 
 interface Props {
     message: string;
