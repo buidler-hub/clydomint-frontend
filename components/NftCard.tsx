@@ -1,5 +1,6 @@
 import { useNFTCollection } from '@thirdweb-dev/react';
 import { useNetwork } from '@thirdweb-dev/react';
+import { ChainId } from '@thirdweb-dev/sdk';
 import Image from 'next/image';
 import { FC, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
@@ -21,9 +22,15 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
     );
 
     const isCorrectNetwork = () => {
-        if (data.network === 'polygon' && currentNetwork?.id !== 137) {
+        if (
+            data.network === 'polygon' &&
+            currentNetwork?.id !== ChainId.Polygon
+        ) {
             return false;
-        } else if (data.network === 'mumbai' && currentNetwork?.id !== 800001) {
+        } else if (
+            data.network === 'mumbai' &&
+            currentNetwork?.id !== ChainId.Mumbai
+        ) {
             return false;
         }
         return true;
