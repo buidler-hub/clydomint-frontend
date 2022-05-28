@@ -2,6 +2,7 @@ import { useNFTCollection } from '@thirdweb-dev/react';
 import Image from 'next/image';
 import { FC, useState } from 'react';
 import toast from 'react-hot-toast';
+import { useNetwork } from "@thirdweb-dev/react"
 
 interface INftCardProps {
     data: {
@@ -19,6 +20,18 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
         process.env.NEXT_PUBLIC_NFT_COLLECTION_ADDRESS,
     );
 
+
+const {
+    activeChain,
+    chains,
+    error,
+    isLoading,
+    pendingChainId,
+    switchNetwork,
+  } = useNetwork();
+
+  console.log(activeChain?.name)
+
     const mint = async () => {
         try {
             setLoading(true);
@@ -33,7 +46,7 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
 
     return (
         <div className="flex flex-col items-center gap-1 font-redHat">
-            <div className="relative h-20 w-[20rem] md:h-60 md:w-[65rem]">
+            <div className="relative h-20 w-full justify-center">
                 <Image
                     objectFit="contain"
                     layout="fill"
@@ -49,6 +62,10 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
                     ? 'Polygon Mumbai'
                     : 'Polygon Mainnet'}
                 . Make sure you&apos;re connected to the correct network
+            </p>
+
+            <p className="mt-3 text-center">
+                You&apos;re connected to {activeChain?.name}
             </p>
             <button
                 disabled={loading}
