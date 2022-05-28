@@ -23,7 +23,7 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
     const isCorrectNetwork = () => {
         if (data.network === 'polygon' && currentNetwork?.id !== 137) {
             return false;
-        } else if (data.network === 'mumbai' && currentNetwork?.id !== 1) {
+        } else if (data.network === 'mumbai' && currentNetwork?.id !== 800001) {
             return false;
         }
         return true;
