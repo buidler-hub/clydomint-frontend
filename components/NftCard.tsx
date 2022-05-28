@@ -1,7 +1,8 @@
 import { useNFTCollection } from '@thirdweb-dev/react';
+import { useNetwork } from '@thirdweb-dev/react';
 import Image from 'next/image';
 import { FC, useState } from 'react';
-import toast from 'react-hot-toast';
+import toast, { Toaster } from 'react-hot-toast';
 
 interface INftCardProps {
     data: {
@@ -19,6 +20,18 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
         process.env.NEXT_PUBLIC_NFT_COLLECTION_ADDRESS,
     );
 
+    const isCorrectNetwork = () => {
+        if (data.network === 'polygon' && currentNetwork?.id !== 137) {
+            return false;
+        } else if (data.network === 'mumbai' && currentNetwork?.id !== 1) {
+            return false;
+        }
+        return true;
+    };
+
+    const network = useNetwork();
+    const currentNetwork = network[0].data.chain;
+
     const mint = async () => {
         try {
             setLoading(true);
@@ -33,7 +46,8 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
 
     return (
         <div className="flex flex-col items-center gap-1 font-redHat">
-            <div className="relative h-20 w-[20rem] md:h-60 md:w-[65rem]">
+            <Toaster />
+            <div className="relative h-20 w-full justify-center">
                 <Image
                     objectFit="contain"
                     layout="fill"
@@ -48,14 +62,18 @@ const NftCard: FC<INftCardProps> = ({ data }) => {
                 {data.network === 'mumbai'
                     ? 'Polygon Mumbai'
                     : 'Polygon Mainnet'}
-                . Make sure you&apos;re connected to the correct network
             </p>
+
             <button
-                disabled={loading}
+                disabled={loading || !isCorrectNetwork()}
                 onClick={mint}
                 className="mt-10 font-montserrat text-lg px-6 py-2 bg-black text-white font-medium rounded-sm hover:scale-95 transition-all duration-100"
             >
-                {loading ? 'Loading...' : 'Mint Now'}
+                {loading
+                    ? 'Loading...'
+                    : isCorrectNetwork()
+                    ? 'Mint Now'
+                    : `Please switch to ${data.network}`}
             </button>
         </div>
     );

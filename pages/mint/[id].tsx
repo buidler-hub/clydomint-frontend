@@ -33,7 +33,7 @@ const MintNFT: NextPage<Props> = ({ data }) => {
                     <NftCard data={data} />
                 </div>
             ) : (
-                <div className="w-[60vw] md:w-screen">
+                <div className="w-full flex justify-center">
                     <ConnectWallet />
                 </div>
             )}
