@@ -1,23 +1,46 @@
-# Next.js + Tailwind CSS Example
+# 🤖 Clydomint Website
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+![](https://imgur.com/Exoqg4v.png)
 
-## Deploy your own
+🚀 Mint NFTs through Clydomint, right from Discord in a snap!
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## 🦄 Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+- Mint your favorite text exchanges as an NFT right from Discord.
+- Login via metamask and mint your NFTs.
 
-## How to use
+## ✨ Getting started
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+1. To get started with Clydomint, you'll need to invite Clydomint to your server. Invite Clydomint to your server, using the following link:
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
-```
+https://discord.com/api/oauth2/authorize?client_id=977579405163520082&permissions=8&scope=bot
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+2. To mint an NFT, use the `;mint` command along with the image attached to the message (This command would upload the NFT on Polygon mainnet). If you want to upload the NFT on Polygon mumbai network, use the `;mumbai` command along with the image attached to the message.
+
+3. After the NFT has been successfully uploaded the respective network, Clydomint would send a DM to the user along with a link where the user can mint the NFT.
+
+4. After clicking on that link, you would need to connect your Metamask wallet to the website so that you can mint the NFT.
+
+## 🐛 Bug reports
+
+If you have faced any kind of bug while using Clydomint, report it in the [Buidler's Hub](https://discord.gg/buidlershub) server.
+
+## 🦸‍♂️ Authors
+
+### Atharva Deosthale
+
+- Twitter: [@athudeosthale](https://twitter.com/athudeosthale)
+- Github: [@atharvadeosthale](https://github.com/atharvadeosthale)
+
+### Avneesh Agarwal
+
+- Website: https://www.avneesh.tech/
+- Twitter: [@avneesh0612](https://twitter.com/avneesh0612)
+- Github: [@avneesh0612](https://github.com/avneesh0612)
+- LinkedIn: [@avneesh0612](https://www.linkedin.com/in/avneesh0612)
+
+### Anurag
+
+- Website: (https://www.anurag.tech/)
+- Twitter: [@imanuraglol](https://twitter.com/imanuraglol)
+- GitHub: [kr-anurag](https://github.com/kr-anurag)
