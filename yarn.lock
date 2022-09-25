@@ -636,15 +636,15 @@
     "@ethersproject/properties" "^5.6.0"
     "@ethersproject/strings" "^5.6.1"
 
-"@fontsource/montserrat@4.5.10":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.10.tgz#0dc94425c575c785c2ac92d244c543bfbb005080"
-  integrity sha512-JXe9wURwLFtPfrD3yYnfvue/Uv2L1iSEor4w6M5CcGO4iWSoaFgk7BPLUwksGD7ChKpGKpaNNLUt67VlCu2A1g==
+"@fontsource/montserrat@4.5.12":
+  version "4.5.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-4.5.12.tgz#465c61fb508f6d0055dbcbfbc6eb7307a81fdf6f"
+  integrity sha512-UQ+4ijm1sddIBtmEZ9bKgCB1rSi4Imog0YKz7wDLtMQ3Mw2ZaBseTgoLDfbWnfdowS0PLp+Z4T2KZ/1AySTlDQ==
 
-"@fontsource/red-hat-display@4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/red-hat-display/-/red-hat-display-4.5.9.tgz#1337eb360813d9b4c605a382e099c569910735bd"
-  integrity sha512-AbZUzPCOUpkyo/R7H2P39yQORJNPj/8s6JrYJVac7fANN/pHMoQ1JgeyCCCoRZeNKHlAfrMx1pQ+SDiS425t+A==
+"@fontsource/red-hat-display@4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/red-hat-display/-/red-hat-display-4.5.10.tgz#bd78159ec536c46f318bf184dfb8228fea6640ff"
+  integrity sha512-V9ME2SuCQ6vjveo+nfPND82Jr9ZB5xfSGDJ04ynkAyen2kj8jCVhGd7kr3IiOAe2twiKXjm7SQZ56mR7UZzvZw==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
